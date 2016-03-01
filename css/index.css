@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.max-div {
+	width: 100%;
+	height: 100%;
+}
+#div1 {
+	background: url(../images/bg_1.jpg) no-repeat;
+}
+#photo {
+	position: relative;
+	margin: 0 auto;
+	top: 200px;
+	width: 200px;
+	height: 200px;
+}
+#photo a {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: solid 10px white;
+	background: url(../images/photo.jpg) no-repeat;
+	background-size: 100%;
+	transition:all 1s;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+}
+#photo a:hover {
+	transform:rotateY(180deg);
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	-o-transform:rotateY(180deg);
+	background: url(../images/ktphoto.png) no-repeat;
+	background-size: 100%;
+}
