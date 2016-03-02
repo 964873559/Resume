@@ -3,18 +3,22 @@
 	width: 100%;
 	height: 50px;
 	bottom: 0px;
-	background: #74adaa;
-	box-shadow: 0px 0px 0px 2px #7bc3fd;
+	background: #000;
+	opacity: 0.8;
+}
+#nav ul {
+	margin: 0 auto;
+	max-width: 1000px;
 }
 #nav li {
-	width: 19.9%;
+	width: 19.8%;
 	height: 100%;
 	display: inline;
 	float: left;
 	border-right:solid 1px #fff;
 }
-#nav li:last-child {
-	border-right: none;
+#nav li:first-child {
+	border-left: solid 1px #fff;
 }
 #nav li a{
 	display: inline-block;
@@ -22,6 +26,69 @@
 	color: #fff;
 	font-family: "Microsoft YaHei";
 	text-align: center;
+	text-decoration: none;
 	font-size: 20px;
 	line-height: 50px;
+	background: #333;
+}
+.three-d {
+	position: relative;
+	perspective:200px;
+	-webkit-perspective:200px;
+	-moz-perspective:200px;
+	-o-perspective:200px;
+	transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+}
+.three-d:hover .three-d-box{
+	-wekbit-transform: translateZ(-25px) rotateX(90deg);
+    -moz-transform: translateZ(-25px) rotateX(90deg);
+    -o-transform: translateZ(-25px) rotateX(90deg);
+    transform: translateZ(-25px) rotateX(90deg);
+}
+.front {
+	transform:rotateX(0deg) translateZ(25px);
+	-webkit-transform:rotateX(0deg) translateZ(25px);
+	-moz-transform:rotateX(0deg) translateZ(25px);
+	-o-transform:rotateX(0deg) translateZ(25px);
+}
+.back {
+	transform:rotateX(-90deg) translateZ(25px);
+	-webkit-transform:rotateX(-90deg) translateZ(25px);
+	-moz-transform:rotateX(-90deg) translateZ(25px);
+	-o-transform:rotateX(-90deg) translateZ(25px);
+}
+.front,.back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #000;
+}
+.three-d-box {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform: translateZ(-25px);
+	-webkit-transform: translateZ(-25px);
+	-moz-transform: translateZ(-25px);
+	-o-transform: translateZ(-25px);
+	transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+}
+#nav li .active .front,
+#nav li .active .back,
+#nav li a:hover .front, 
+#nav li a:hover .back {
+	background: #333;
 }
