@@ -5,18 +5,12 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/timeline.css">
 </head>
 <body>
-	<div id="div1" class="max-div">
-		<div id="photo"><a></a></div>
-		<div id="hello">
-			<p>一个小小程序员的前端简历...</p>
-			<p></p>
-			<a><i>Hello World!</i></a>
-		</div>
-		<div id="nav">
+	<div id="nav" data-scroll-reveal>
 			<ul>
-				<li><a href="#" class="three-d active">
+				<li><a href="javascript:scrollDown(1);" class="three-d">
 					基本资料
 					<span class="three-d-box">
 						<span class="front">基本资料</span>
@@ -24,7 +18,7 @@
 					</span>
 					
 				</a></li>
-				<li><a href="javascript:scrollDown(1);" class="three-d" >
+				<li><a href="javascript:scrollDown(2);" class="three-d" >
 					学习经历
 					<span class="three-d-box">
 						<span class="front">学习经历</span>
@@ -32,7 +26,7 @@
 					</span>
 					
 				</a></li>
-				<li><a href="javascript:scrollDown(2);" class="three-d">
+				<li><a href="javascript:scrollDown(3);" class="three-d">
 					掌握技能
 					<span class="three-d-box">
 						<span class="front">掌握技能</span>
@@ -40,7 +34,7 @@
 					</span>
 					
 				</a></li>
-				<li><a href="javascript:scrollDown(3);" class="three-d">
+				<li><a href="javascript:scrollDown(4);" class="three-d">
 					学习成果
 					<span class="three-d-box">
 						<span class="front">学习成果</span>
@@ -48,7 +42,7 @@
 					</span>
 					
 				</a></li>
-				<li><a href="javascript:scrollDown(4);" class="three-d">
+				<li><a href="javascript:scrollDown(5);" class="three-d">
 					未来目标
 					<span class="three-d-box">
 						<span class="front">未来目标</span>
@@ -57,9 +51,16 @@
 					
 				</a></li>
 			</ul>
+	</div>
+	<div id="div1" class="max-div">
+		<div id="photo" data-scroll-reveal="enter from the top over 1.5s"><a></a></div>
+		<div id="hello" data-scroll-reveal="enter from the bottom wait 1s">
+			<p>一个小小程序员的前端简历...</p>
+			<p></p>
+			<a><i>Hello World!</i></a>
 		</div>
 	</div>
-	<div id="div2" class="max-div">
+	<div id="div2" class="max-div" data-scroll-reveal="enter from the top wait 0.5s and move 200px">
 		<div id="div2-1">
 			<p><b>姓名：黄运智</b></p>
 			<p>生日：1996.4.17</p>
@@ -82,9 +83,30 @@
 			</div>
 		</div>
 	</div>	
-	<div id="div3" class="max-div"></div>
+	<div id="div3" class="max-div">
+		<div id="timeline">
+			<span id="timeline-title">Never stop studying</span>
+			<div id="timeline-line">
+				<ul>
+					<span></span><li></li>
+					<span></span><li class="even"></li>
+					<span></span><li></li>
+					<span></span><li class="even"></li>
+					<span></span><li></li>
+					<span></span><li class="even"></li>
+					<span></span><li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<div id="div4" class="max-div"></div>
 	<div id="div5" class="max-div"></div>
 	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/scrollReveal.js"></script>
+	<script type="text/javascript">
+		(function  (argument) {
+			window.scrollReveal = new scrollReveal({reset:true});
+		})();
+	</script>
 </body>
 </html>
