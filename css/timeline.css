@@ -1,0 +1,133 @@
+#timeline {
+	width: 100%;
+	height: 550px;
+	background: #1d2641;
+	margin: 20px auto;
+	position: absolute;
+}
+#timeline-line {
+	width: 90%;
+	height: 0px;
+	border: solid 2px #fff;
+	margin: auto;
+	margin-top: 235px;
+	box-shadow: 0 0 1px #FFFF00;
+}
+#timeline-title {
+	width: 250px;
+	display: block;
+	color: #fff;
+	font-size: 25px;
+	margin: 10px auto;
+	position: relative;
+}
+#timeline-line ul {
+	position: relative;
+	list-style: none;
+}
+#timeline-line ul li {
+	display: inline-block;
+	float: left;
+	/*margin: 0 75px;*/
+	/*opacity: 0.8;*/
+	height: auto;
+	width: auto;
+	position: relative;
+	top: 22px;
+	border: solid 1px #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 2px 0px #FFFF00; 
+}
+#timeline-line ul li p {
+	width: 140px;
+	font-size: 16px;
+	color: #fff;
+	padding: 10px;
+	white-space: normal;
+	word-break:break-all;
+	margin: 0 auto;
+}
+#timeline-line ul li:not(.even):before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 10px transparent solid;
+	border-bottom-color: #fff;
+	top: -21px;
+	left: 68px;
+	position: absolute;
+}
+#timeline-line .even:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 10px transparent solid;
+	border-top-color: #fff;
+	left: 68px;
+	position: absolute;
+	bottom: -21px;
+}
+
+#timeline ul li:not(.even) span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	top: -30px;
+	left: 70px;
+	background: #7bc3fd;
+	position: absolute;
+	border-radius: 50%;
+	border: solid 3px #fff;
+	box-shadow: 0px 0px 3px #7bc3fd;
+	z-index: 100;
+}
+#timeline ul li:not(.even) span:before {
+	color: #efc757;
+	font-style: italic;
+	font-size: 20px;
+	position: absolute;
+	bottom: 20px;
+	left: -25px;
+}
+#timeline .even span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	bottom: -30px;
+	left: 70px;
+	background: #7bc3fd;
+	position: absolute;
+	border-radius: 50%;
+	border: solid 3px #fff;
+	box-shadow: 0px 0px 3px #7bc3fd;
+	z-index: 100;
+}
+#timeline .even span:before {
+	color: #efc757;
+	font-style: italic;
+	font-size: 20px;
+	position: absolute;
+	bottom: -35px;
+	left: -25px;
+}
+#timeline #span1:before {
+	content: "2014/9";
+}
+#timeline #span2:before {
+	content: "2014/12";
+}
+#timeline #span3:before {
+	content: "2015/3";
+}
+#timeline #span4:before {
+	content: "2015/8";
+}
+#timeline #span5:before {
+	content: "2015/9";
+}
+#timeline #span6:before {
+	content: "2016/1";
+}
+#timeline #span7:before {
+	content: "2016/3";
+}
