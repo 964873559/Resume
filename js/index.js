@@ -1,4 +1,11 @@
-
+window.onload = function  () {
+	//时间轴Li对齐
+	var timeline = document.getElementById('timeline-line');
+	var obj = timeline.getElementsByClassName('even');
+	for (var i = 0; i < obj.length; i++) {
+		obj[i].style.top = 0 - obj[i].offsetHeight - 20 +"px";
+	};
+}
 //获取屏幕的宽度
 var windowH ;
 var start ;
