@@ -16,7 +16,7 @@
 #timeline-title {
 	width: 250px;
 	display: block;
-	color: #fff;
+	color: #bb3c3e;
 	font-size: 25px;
 	margin: 10px auto;
 	position: relative;
@@ -39,7 +39,7 @@
 	box-shadow: 0 0 2px 0px #FFFF00; 
 }
 #timeline-line ul li p {
-	width: 105px;
+	width: 140px;
 	font-size: 16px;
 	color: #fff;
 	padding: 10px;

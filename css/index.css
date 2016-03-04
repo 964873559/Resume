@@ -107,6 +107,7 @@ body {
 	margin-bottom: -30px;
 	font-size: 30px;
 	width: 130px;
+	color:#bb3c3e;
 }
 .skills {
 	width: 150px;
@@ -204,7 +205,7 @@ body {
 #div5-bottom {
 	width: 1200px;
 	height: 600px;
-	border: solid 1px #000;
+	/*border: solid 1px #000;*/
 	left: 50%;
 	margin-left: -600px;
 	top: 50%;
@@ -215,7 +216,7 @@ body {
 	width: 365px;
 	height: 250px;
 	margin: 15px 15px;
-	border: solid 1px #000;
+	/*border: solid 1px #000;*/
 	float: left;
 	perspective:500px;
 	perspective-origin:50% 50%;
@@ -266,7 +267,6 @@ body {
 	-o-tranform-origin:top;
 }
 #div5-bottom .pro-back {
-	background: black;
 	transform:rotateX(90deg);
 	-webkit-transform:rotateX(90deg);
 	-o-transform:rotateX(90deg);
@@ -295,4 +295,123 @@ body {
 }
 #pro6 {
 	background: url(../images/pro6.png);
+}
+#div5-bottom .pro-back p {
+	width: 320px;
+	height: 200px;
+	background: #e6e8ea;
+	margin: 0 auto;
+	padding: 20px;
+	line-height: 30px;
+	border: solid 1px #8384f3;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0px 0px 10px 0px #595959;
+}
+#div6-line {
+	width: 1000px;
+	height: 500px;
+	border-left: solid 5px #1d2641;
+	border-bottom: solid 5px #1d2641;
+	margin-top:-220px;
+	top: 50%;
+	left: 50%;
+	margin-left: -500px;
+	position: absolute;
+}
+#div6-line:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: solid transparent 15px;
+	border-bottom-color: #1d2641;
+	position:absolute;
+	top: -30px;
+	left: -17px;
+}
+#div6-line:after {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: solid transparent 15px;
+	border-left-color: #1d2641;
+	position:absolute;
+	top: 488px;
+	left: 1000px;
+}
+#div6-title {
+	width: 120px;
+	color: #bb3c3e;
+	font-size: 30px;
+	position: absolute;
+	left: 50%;
+	margin-left: -60px;
+	top: 30px;
+}
+#div6-line .goals {
+	height: auto;
+	border-radius: 5px;
+	margin-top: 30px;
+	box-shadow: 0 0 3px #80f009;
+}
+#div6-line .goals p{
+	font-size: 20px;
+	color: #fff;
+	padding: 10px;
+}
+#div6-line .goals:before{
+	color: #1d2641;
+	position: absolute;
+	left: -100px;
+	padding-top: 13px;
+	font-size: 20px;
+	font-style: italic;
+}
+#goal1 {
+	width: 420px;
+	margin-left: 130px;
+	background: #551a8b;
+}
+#goal1:before {
+	content: "2016/3";
+}
+#goal2 {
+	width: 680px;
+	margin-left: 230px;
+	background: #ff8247;
+}
+#goal2:before {
+	content: "2016/3";
+}
+#goal3 {
+	width: 310px;
+	margin-left: 330px;
+	background: #add8e6;
+}
+#goal3:before {
+	content: "2016/7";
+}
+#goal4 {
+	width: 530px;
+	margin-left: 430px;
+	background: #ee0000;
+}
+#goal4:before {
+	content: "2016/9";
+}
+#goal5 {
+	width: 200px;
+	margin-left: 530px;
+	background: #66cd00;
+}
+#goal5:before {
+	content: "2017/6";
+}
+#goal6 {
+	width: 330px;
+	margin-left: 630px;
+	background: #ee6363;
+}
+#goal6:before {
+	content: "......";
 }
