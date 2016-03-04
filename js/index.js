@@ -40,3 +40,4 @@ function scrollBegin () {
 	end += 100;
 	time = setTimeout("scrollBegin()",50);
 }
+
