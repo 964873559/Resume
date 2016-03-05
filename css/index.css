@@ -2,11 +2,17 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	min-width: 1200px;
+	height: 100%;
+}
 body {
+	width: 100%;
+	height: 100%;
 	background: #e6e8ea;
 }
 .max-div {
-	min-width: 1024px;
+	width: 100%;
 	height: 100%;
 	position: relative;
 }
@@ -414,4 +420,26 @@ body {
 }
 #goal6:before {
 	content: "......";
+}
+#back-top {
+	position: fixed;
+	right: 0px;
+	top: 70%;
+}
+.back-top {
+	color: #fff;
+	width: 50px;
+	height: 50px;	
+	margin-top: 5px;
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px;
+	position: relative;
+}
+.back-top:nth-child(1) {
+	background: #000;
+}
+.back-top:nth-child(2) {
+	font-size: 20px;
+	background: green;
 }

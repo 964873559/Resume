@@ -384,7 +384,7 @@ window.scrollReveal = (function (window) {
     },
 
     isElementInViewport : function(el, h) {
-      var scrolled = this.docElem.scrollTop + this.docElem.offsetTop;
+      var scrolled = this.docElem.scrollTop + this.docElem.offsetTop ;
 		if (this.docElem == window.document.documentElement)scrolled = window.pageYOffset;
 		var
 			viewed = scrolled + this.getViewportH(),

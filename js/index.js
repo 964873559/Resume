@@ -11,13 +11,16 @@ var windowH ;
 var start ;
 var end ;
 var time;
+var back = document.getElementById('back-top');
 
 //滚屏方法
 function  scrollDown(id) {
 	//初始化
-	windowH = document.body.clientHeight;
+	windowH = document.documentElement.clientHeight || document.body.clientHeight;
 	start = 0;
 	end = 100;
+	//显示返回按钮
+	back.style.display = "block";
 	if (id>0) {
 		windowH = windowH*id;
 		scrollBegin();
@@ -41,3 +44,8 @@ function scrollBegin () {
 	time = setTimeout("scrollBegin()",50);
 }
 
+//返回顶部
+function backTop() {
+	parent.scroll(0,0);
+	back.style.display = "none";
+}
