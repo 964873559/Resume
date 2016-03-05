@@ -11,7 +11,7 @@ var windowH ;
 var start ;
 var end ;
 var time;
-var back = document.getElementById('back-top');
+var back ;
 
 //滚屏方法
 function  scrollDown(id) {
@@ -19,6 +19,7 @@ function  scrollDown(id) {
 	windowH = document.documentElement.clientHeight || document.body.clientHeight;
 	start = 0;
 	end = 100;
+	back = document.getElementById('back-top');
 	//显示返回按钮
 	back.style.display = "block";
 	if (id>0) {
